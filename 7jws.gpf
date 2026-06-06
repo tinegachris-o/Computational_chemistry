@@ -1,0 +1,17 @@
+npts 126 126 126                     # num.grid points in xyz
+gridfld 7JWS_clean.maps.fld          # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A C NA OA N HD          # ligand atom types
+receptor 7JWS_clean.pdbqt            # macromolecule
+gridcenter 38.312 -14.862 18.519     # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 7JWS_clean.A.map                 # atom-specific affinity map
+map 7JWS_clean.C.map                 # atom-specific affinity map
+map 7JWS_clean.NA.map                # atom-specific affinity map
+map 7JWS_clean.OA.map                # atom-specific affinity map
+map 7JWS_clean.N.map                 # atom-specific affinity map
+map 7JWS_clean.HD.map                # atom-specific affinity map
+elecmap 7JWS_clean.e.map             # electrostatic potential map
+dsolvmap 7JWS_clean.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
